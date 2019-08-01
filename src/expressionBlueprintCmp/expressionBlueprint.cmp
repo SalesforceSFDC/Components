@@ -23,7 +23,7 @@
                     class="slds-text-heading_medium" />
             </h2>
             <div class="slds-expression__options">
-                <lightning:combobox name="logic" label="Send Pizza When" value="all" options="{! v.logicOptions }" />
+                <lightning:combobox name="logic" label="Send Pizza When" value="all" options="{! v.logicOptions }" onchange="{! c.handleChange } />
             </div>
             <ul>
                 <li class="slds-expression__row">
