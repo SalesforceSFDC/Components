@@ -1,0 +1,5 @@
+<aura:attribute name="fields" type="List" default="[Statuc__c]" />
+
+<lightning:recordForm recordId="{!v.property.Broker__c}"
+                    objectApiName="Broker__c"
+                    fields="{!v.brokerFields}" />

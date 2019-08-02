@@ -1,0 +1,3 @@
+<lightning:recordEditForm recordId="{!v.recordId}" objectApiName="Fund__c">
+    <lightning:inputField fieldName="Status__c" />
+</lightning:recordEditForm>

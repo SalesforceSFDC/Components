@@ -1,0 +1,9 @@
+<aura:attribute name="fund" type="Object" />
+<aura:attribute name="categories" type="List" />
+
+<force:recordData recordId="{!v.recordId}" fields="['Categories__c']" targetFields="{!v.funds}" />
+<lightning:select label="Category" value="{!v.selectedValue}">
+    <aura:iteration items="{!v.categories}" var="category">
+        <option text="{!v.category.Name}" value="{!category.Id}" />
+    </aura:iteration>
+</lightning:select>
