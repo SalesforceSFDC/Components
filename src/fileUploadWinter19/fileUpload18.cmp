@@ -1,0 +1,17 @@
+<!--FileUpload.cmp-->
+<aura:component controller="FileUploadController" 
+                implements="force:appHostable, 
+                            flexipage:availableForAllPageTypes, 
+                            flexipage:availableForRecordHome, 
+                            force:hasRecordId, 
+                            forceCommunity:availableForAllPageTypes, 
+                            force:lightningQuickAction" 
+                access="global">
+     
+    <lightning:fileUpload label="Upload File" 
+                          multiple="true" 
+                          accept=".pdf, .png" 
+                          recordId="{!v.recordId}" 
+                          aura:id="multifileUpload" 
+                          onuploadfinished="{!c.handleUploadFinished}" />
+</aura:component>
